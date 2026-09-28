@@ -1,0 +1,69 @@
+/* Small additions only; all surfaces inherit the original v1.11 design. */
+.female-crop,.real-doctor img,.doctor-hero .identity img{object-fit:cover!important;object-position:center top!important}
+.quick-item>svg{width:26px;height:26px;margin-bottom:12px;background:#e7f1ff;color:#287bd9;padding:13px;box-sizing:content-box;border-radius:16px}.quick-item b{font-size:15px}.quick-item small{font-size:11px;line-height:1.5}
+.risk-card{padding:18px;border-radius:22px;border:1px solid #ecd8cf;margin:12px 0}.risk-card>small{display:block;margin-bottom:12px}.search-box{display:flex;gap:10px;align-items:center}.search-box svg{width:20px;flex-shrink:0}.search-box input{width:100%}
+.f-checks{display:grid;gap:4px}.f-checks label{min-height:44px}.f-chat-choices{display:flex;gap:8px;overflow:auto;padding:12px 0;flex-shrink:0}.f-chat-choices button{white-space:normal;min-width:108px;max-width:190px;font-size:12px;padding:9px}
+#voiceLayer .form-group{margin:10px 0;font-size:12px}#voiceLayer .form-group select{background:#fffaf6;min-height:42px}#voiceLayer .check{font-size:13px;min-height:32px}#voiceLayer .call-identity{padding-top:4px}#voiceLayer .call-middle{overflow:auto}#voiceLayer .call-demo-tools p{font-size:14px;line-height:1.6}#voiceLayer .call-demo-tools textarea{font-size:14px}#voiceLayer .call-demo-tools button{min-height:40px}
+.visit-orders21 p{overflow-wrap:anywhere}.row-label b{overflow-wrap:anywhere}.doctor .idcard h2{line-height:1.6}.f-checks input{flex-shrink:0}
+@media(max-width:700px){.demo-toolbar{flex-wrap:nowrap}.demo-toolbar label{display:flex;align-items:center;min-width:0;font-size:0}.demo-toolbar select{font-size:10px;max-width:145px}.demo-toolbar button{padding:4px;white-space:nowrap;font-size:9px}.demo-toolbar [data-action="push19"]{max-width:84px;white-space:normal;line-height:1.1}.call-identity .call-avatarWrap{width:100px;height:100px}.call-identity .call-avatar{width:100px;height:100px}.repo-call-page .call-waveBand{height:36px}.call-name{font-size:17px!important}}
+
+/* v1.1: NeoMARS queue primitives; only the regimen and status model differ. */
+.doctor .patient-row .queue-person{min-width:0;flex:1}
+.doctor .patient-row .details{gap:10px}
+.doctor .patient-row .single-arm-tag,.doctor .idcard .single-arm-tag{display:block;margin:12px 0 0;padding:8px 10px;white-space:normal;line-height:1.65;max-width:100%;font-size:13px;overflow-wrap:anywhere}
+.doctor .patient-row .stage-strip{gap:12px}
+.doctor .patient-row .stage-strip span:first-child{flex:1;min-width:0;white-space:normal;line-height:1.6}
+.doctor .patient-row .stage-strip span:last-child{flex-shrink:0}
+.doctor .queue-tabs{gap:7px}
+.doctor .queue-tabs button{padding:9px 12px}
+.doctor .doctor-hero .identity img{width:80px;height:80px;flex-shrink:0;object-fit:cover!important;object-position:center!important}
+
+/* Older-patient reading mode: reflow content rather than scale the phone. */
+#patientPhone{font-size:18px;--muted:#77685e}
+#patientPhone :is(p,div,span,small,label,button,input,select,textarea,summary,li,b,strong){font-size:18px;line-height:1.65}
+#patientPhone :is(small,.subtle,.meta,.message-time,.analysis-label,.pill,.hint,.identity-note,.repo-teamline){font-size:16px;line-height:1.65}
+#patientPhone :is(h1,.app-head h1){font-size:24px;line-height:1.45}
+#patientPhone :is(h2,.sheet-head h2){font-size:23px;line-height:1.5}
+#patientPhone h3{font-size:20px;line-height:1.5}
+#patientPhone :is(button,input:not([type=checkbox]):not([type=radio]),select){min-height:48px}
+#patientPhone :is(input,select,textarea){max-width:100%;min-width:0;font-size:18px}
+#patientPhone :is(input[type=checkbox],input[type=radio]){width:22px;height:22px}
+#patientPhone :is(.card,.sheet,.bubble,.hint,.list-link){overflow-wrap:break-word}
+#patientPhone .card{padding:18px 16px}
+#patientPhone .form-grid{grid-template-columns:1fr}
+#patientPhone .row-label{display:block;padding:12px 0}
+#patientPhone .row-label b{display:block;text-align:left;max-width:100%;margin-top:4px}
+#patientPhone .scale-options{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#patientPhone .scale-options label{padding:12px 8px;min-height:60px;font-size:18px}
+#patientPhone .check{min-height:48px;gap:12px}
+#patientPhone .check input{margin-top:4px}
+#patientPhone .app-head{gap:10px}
+#patientPhone .app-head h1{min-width:0;white-space:normal}
+#patientPhone .sheet-head h2{min-width:0}
+#patientPhone :is(.icon-btn,.round-btn){flex-shrink:0;min-width:48px;width:48px;height:48px}
+#patientPhone .cx-stripDay{min-width:48px;font-size:16px}
+#patientPhone .cx-stripBadge{font-size:16px;top:-7px;right:0}
+#patientPhone .calendar-heading{flex-wrap:wrap;gap:6px}
+#patientPhone .calendar-heading span{font-size:16px}
+#patientPhone .f-chat-choices{flex-wrap:wrap;overflow:visible}
+#patientPhone .f-chat-choices button{flex:1 1 130px;max-width:none;font-size:18px;padding:10px}
+#patientPhone .bubble{font-size:18px;line-height:1.8}
+#patientPhone .chat-composer{position:static;flex-wrap:nowrap;margin-top:20px}
+#patientPhone .chat-composer textarea{font-size:18px;min-height:54px}
+#patientPhone .chat-page .mine{margin-left:24px}
+#patientPhone .timeline-item small{display:block;font-size:16px}
+#patientPhone :is(.task-row,.row-label,.list-link){gap:12px}
+#patientPhone .statusbar :is(b,span){font-size:13px}
+#patientPhone #voiceLayer :is(.call-demo-tools p,.check,.form-group,.voice-q,.call-step,summary){font-size:18px;line-height:1.65}
+#patientPhone #voiceLayer .call-name{font-size:21px!important}
+#patientPhone #voiceLayer .call-identity p{font-size:16px}
+#patientPhone #voiceLayer .call-middle{min-height:0;overflow:auto}
+#patientPhone #voiceLayer .call-demo-tools textarea{min-height:74px;font-size:18px}
+#patientPhone #voiceLayer .call-controls button{min-height:48px}
+#patientPhone #voiceLayer .call-identity .call-avatarWrap,#patientPhone #voiceLayer .call-identity .call-avatar{width:90px;height:90px}
+.toast{font-size:17px;line-height:1.5}
+@media(max-width:700px){.mobile-switch button{font-size:16px}.demo-toolbar{height:auto;min-height:44px}.demo-toolbar select{font-size:13px;max-width:170px}.demo-toolbar button{font-size:12px}.stage{height:calc(100dvh - 84px)}#patientPhone .app-scroll{padding-left:16px;padding-right:16px}}
+#patientPhone .expert-badge{font-size:16px!important;line-height:1.6;padding:5px 9px}
+#patientPhone .cx-taskRow{flex-wrap:wrap}
+#patientPhone .cx-taskText{flex:1 1 170px}
+#patientPhone .cx-taskGoBtn{margin-left:auto}
