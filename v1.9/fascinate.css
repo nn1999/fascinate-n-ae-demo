@@ -1,0 +1,52 @@
+/* Small additions only; all surfaces inherit the original v1.11 design. */
+.female-crop,.real-doctor img,.doctor-hero .identity img{object-fit:cover!important;object-position:center top!important}
+.quick-item>svg{width:26px;height:26px;margin-bottom:12px;background:#e7f1ff;color:#287bd9;padding:13px;box-sizing:content-box;border-radius:16px}.quick-item b{font-size:15px}.quick-item small{font-size:11px;line-height:1.5}
+.risk-card{padding:18px;border-radius:22px;border:1px solid #ecd8cf;margin:12px 0}.risk-card>small{display:block;margin-bottom:12px}.search-box{display:flex;gap:10px;align-items:center}.search-box svg{width:20px;flex-shrink:0}.search-box input{width:100%}
+.f-checks{display:grid;gap:4px}.f-checks label{min-height:44px}.f-chat-choices{display:flex;gap:8px;overflow:auto;padding:12px 0;flex-shrink:0}.f-chat-choices button{white-space:normal;min-width:108px;max-width:190px;font-size:12px;padding:9px}
+#voiceLayer .form-group{margin:10px 0;font-size:12px}#voiceLayer .form-group select{background:#fffaf6;min-height:42px}#voiceLayer .check{font-size:13px;min-height:32px}#voiceLayer .call-identity{padding-top:4px}#voiceLayer .call-middle{overflow:auto}#voiceLayer .call-demo-tools p{font-size:14px;line-height:1.6}#voiceLayer .call-demo-tools textarea{font-size:14px}#voiceLayer .call-demo-tools button{min-height:40px}
+.visit-orders21 p{overflow-wrap:anywhere}.row-label b{overflow-wrap:anywhere}.doctor .idcard h2{line-height:1.6}.f-checks input{flex-shrink:0}
+@media(max-width:700px){.demo-toolbar{flex-wrap:nowrap}.demo-toolbar label{display:flex;align-items:center;min-width:0;font-size:0}.demo-toolbar select{font-size:10px;max-width:145px}.demo-toolbar button{padding:4px;white-space:nowrap;font-size:9px}.demo-toolbar [data-action="push19"]{max-width:84px;white-space:normal;line-height:1.1}.call-identity .call-avatarWrap{width:100px;height:100px}.call-identity .call-avatar{width:100px;height:100px}.repo-call-page .call-waveBand{height:36px}.call-name{font-size:17px!important}}
+
+/* v1.1: NeoMARS queue primitives; only the regimen and status model differ. */
+.doctor .patient-row .queue-person{min-width:0;flex:1}
+.doctor .patient-row .details{gap:10px}
+.doctor .patient-row .single-arm-tag,.doctor .idcard .single-arm-tag{display:block;margin:12px 0 0;padding:8px 10px;white-space:normal;line-height:1.65;max-width:100%;font-size:13px;overflow-wrap:anywhere}
+.doctor .patient-row .stage-strip{gap:12px}
+.doctor .patient-row .stage-strip span:first-child{flex:1;min-width:0;white-space:normal;line-height:1.6}
+.doctor .patient-row .stage-strip span:last-child{flex-shrink:0}
+.doctor .queue-tabs{gap:7px}
+.doctor .queue-tabs button{padding:9px 12px}
+.doctor .doctor-hero .identity img{width:80px;height:80px;flex-shrink:0;object-fit:cover!important;object-position:center!important}
+
+/* Natural calls use the existing warm Cx phone shell. */
+.v14-call{display:flex;flex-direction:column;overflow:auto;padding-bottom:env(safe-area-inset-bottom)}
+.v14-call .call-topBar{padding:20px 24px;display:flex;justify-content:space-between;font-size:12px}
+.v14-call .call-identity{padding-top:12px;flex:none}.v14-call .call-name{font-size:22px}
+.v14-call .call-avatarWrap{width:144px;height:144px}.v14-call .call-avatar{width:144px;height:144px}
+.v14-wave{display:flex;align-items:center;justify-content:center;gap:5px;height:65px;flex:none}
+.v14-wave i{width:4px;border-radius:8px;background:#cf8c6c;height:calc(10px + var(--i)*2px);animation:v14wave 1.3s ease-in-out infinite alternate;animation-delay:calc(var(--i)*-.13s)}
+@keyframes v14wave{to{transform:scaleY(.25);opacity:.5}}
+.v14-call.is-paused .v14-wave i{animation-play-state:paused}
+.v14-caption{margin:0 24px;min-height:110px;max-height:210px;overflow:auto;text-align:center;flex:1;font-size:15px;line-height:1.8}
+.v14-caption>span{font-size:12px;color:#977a68}.v14-caption p{margin:6px 0 16px}
+.v14-call .call-controls{position:static;margin-top:12px;padding:12px 16px 24px;flex:none}
+.v14-chat-controls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.v14-chat-controls button{min-height:44px;white-space:normal}
+.v14-symptom-question{margin:16px 0}.v14-symptom-question .action-row button{min-width:100px;min-height:44px}
+@media(max-height:720px){.v14-call .call-avatarWrap,.v14-call .call-avatar{width:105px;height:105px}.v14-call .call-identity{padding-top:0}.v14-wave{height:40px}.v14-caption{max-height:155px}.v14-call .call-controls{padding-bottom:12px}}
+.v14-symptom-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 0;border-top:1px solid #eadfd6}.v14-symptom-row>span{flex:1;line-height:1.6}.v14-symptom-row>div{display:flex;gap:6px;flex:none}.v14-symptom-row button{min-width:44px;min-height:44px;padding:8px 14px}.v14-symptom-done{color:#288b68;padding:8px 18px}
+.live-mic-note{font-size:12px;text-align:center;margin:0 20px 18px;color:#806a5e;line-height:1.6}.v14-call:has(.call-phase) [role=alert]{color:#a34831;font-size:14px}.v14-call .call-controls{gap:6px}
+
+/* v1.6 identity and neutral answer controls, using existing Cx assets. */
+.chat-top .chat-team-title{display:flex;align-items:center;gap:7px;flex:1;min-width:0;padding:0 8px;text-align:left}.chat-team-title img,.chat-sender img{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:center 20%;background:#fbefe5;flex:none}.chat-team-title b{font-size:13px;line-height:1.5;font-weight:500}.chat-sender{display:flex;align-items:center;gap:8px;margin:0 0 9px;color:#826e60}.chat-sender b{font-size:13px;line-height:1.5;font-weight:500}.chat-number{flex:1;min-width:150px;margin:0!important}.chat-number select{margin-top:6px;min-height:44px}.f-chat-choices>small{flex-basis:100%;font-size:13px}.ev-evidence{margin:16px 0;line-height:1.7}.ev-evidence details{border-bottom:1px solid #dce7f5;padding:10px 0}.ev-evidence summary{cursor:pointer}.ev-evidence p{overflow-wrap:anywhere}.v14-call .call-name{font-size:20px;line-height:1.5}.real-doctor{flex-wrap:wrap}.real-doctor b{font-size:14px}
+
+/* v1.7 preserves original body size and visual primitives. */
+.live-fast{max-width:310px;margin:18px auto 0!important}.a17-assessment details{padding:12px 0;border-bottom:1px solid #dfe9f7}.a17-assessment summary{cursor:pointer;line-height:1.7}.a17-assessment p{overflow-wrap:anywhere}.repo-call-page.v14-call .v14-caption:empty{min-height:0;padding:0}@media(max-height:700px){.repo-call-page.v14-call .call-identity{margin-top:12px}.repo-call-page.v14-call .v14-wave{margin:12px auto}.repo-call-page.v14-call .live-fast{margin-top:10px!important}}
+/* Item-level review keeps the suggestion and physician decision together. */
+.a18-review-item{padding:18px 0;border-bottom:1px solid #dce7f7;margin-bottom:18px}.a18-review-item h3{margin-bottom:12px}.a18-review-item p{line-height:1.65}.a18-review-item:last-child{border-bottom:0}
+.patient-hero>img{width:106px;height:106px;object-fit:cover;border-radius:50%;object-position:center top}
+.expert-portrait .cx-heroImage{width:100px;height:100px;object-fit:cover;border-radius:50%;object-position:center top}
+.repo-call-page .call-avatar{object-fit:cover;border-radius:50%;object-position:center top}
+
+/* v1.9 patient portrait and in-call report sheet */
+#patient img[src*="female-doctor-v19"],#voiceLayer .call-avatar{background:transparent!important;border:0!important;box-shadow:none!important}
+#patientModal.call-upload19{z-index:70}.call-upload19 .sheet{max-height:91%;}.camera-button19{display:block;text-align:center;padding:12px;border-radius:16px;margin:12px 0;cursor:pointer}.call-upload-status19{color:#9d634f;background:#fff4e9;padding:10px 12px;border-radius:12px}.literature19{padding:12px 0;line-height:1.75}.literature19 p{margin:5px 0}.literature19 sup{font-size:11px;margin-left:4px}.literature19 a{color:#287ddb;overflow-wrap:anywhere}.literature19 details{margin-top:8px}.literature19 small{display:block}
